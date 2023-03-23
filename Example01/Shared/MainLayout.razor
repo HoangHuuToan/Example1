@@ -1,8 +1,57 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
+    <div class="content">
+        <div>
+            <label>Tìm Kiếm:</label>
+            <input type="text" />
+        </div>
+        
+        <div style="width:100%;display:flex">
+            <table class="table align-items-center">
+                <thead>
+                    <tr>
+                        <th class="align-items-center">Name</th>
+                        <th class="align-items-center">Email</th>
+                        <th class="align-items-center">Number Phone</th>
+                        <th class="align-items-center">Role</th>
+                        <th class="align-items-center" colspan="2">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var user in List_User)
+                    {
+                        <tr>
+                            <td>@user.Name</td>
+                            <td>@user.Email</td>
+                            <td>@user.NumberPhone</td>
+                            <td>@user.Role</td>
+                            <td><button class="btn btn-info" @onclick="()=>show_update_form(user.Id)">UPDATE User</button></td>
+                            <td><button class="btn btn-danger" @onclick="()=>del_user(user.Id)">DELETE User</button></td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
 
-    <Example01.Pages.MyPage/>
+
+        </div>
+
 
 </div>
+    <div style="display:flex ; justify-content:center">
+
+        <button class="btn btn-primary" @onclick="show_add_form">ADD User</button></div> 
+
+        <div class="form_add">
+            <div class="form_add-content">
+            @if (status)
+            {
+                <Example01.Pages.Addition @ref="AdditonRef" clb_add_user="add_user" clb_update_user="update_user" clb="close_form" cate=@cate List_User="User_Update"></Example01.Pages.Addition>
+            }               
+            </div>      
+        </div>
+       
+    
+</div>
+
 

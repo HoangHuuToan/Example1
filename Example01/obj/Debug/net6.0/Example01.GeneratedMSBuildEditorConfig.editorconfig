@@ -24,8 +24,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkaXRpb24ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ToanHH/Project_Blazor/Example1/Example01/Pages/MyPage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlQYWdlLnJhem9y
+[C:/Users/ToanHH/Project_Blazor/Example1/Example01/Pages/Component.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tcG9uZW50LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ToanHH/Project_Blazor/Example1/Example01/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ToanHH/Project_Blazor/Example1/Example01/Shared/SurveyPrompt.razor]
@@ -35,10 +39,6 @@ build_metadata.AdditionalFiles.CssScope =
 [C:/Users/ToanHH/Project_Blazor/Example1/Example01/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ToanHH/Project_Blazor/Example1/Example01/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-50d1g0f5m2
 
 [C:/Users/ToanHH/Project_Blazor/Example1/Example01/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=

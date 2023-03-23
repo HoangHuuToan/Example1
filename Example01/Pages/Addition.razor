@@ -1,6 +1,53 @@
-﻿@page "/addition" 
-<h3>Addition</h3>
+﻿@if (@cate == "add")
+{
+    <h3>Addition</h3>
+    <p>
+        <label>Name :</label><br />
+        <input @bind="name" />
+    </p>
 
-@code {
+    <p>
+        <label>Mail :</label><br />
+        <input @bind="email" />
+    </p>
 
+    <p>
+        <label>Number Phone :</label><br />
+        <input @bind="number_phone" />
+    </p>
+
+    <p>
+        <label>Role :</label><br />
+        <input @bind="role" />
+    </p>
+    <button class="btn btn-primary" @onclick="add_user">ADD</button>
 }
+else if (@cate == "update")
+{   
+        <h3>Update</h3>
+        <p>
+            <label>Name :</label><br />
+            <input @bind="name" />
+        </p>
+
+        <p>
+            <label>Mail :</label><br />
+            <input @bind="email" />
+        </p>
+
+        <p>
+            <label>Number Phone :</label><br />
+            <input @bind="number_phone" />
+        </p>
+
+        <p>
+            <label>Role :</label><br />
+            <input @bind="role" />
+        </p>
+    
+        <button class="btn btn-primary" @onclick="()=>update_user(List_User[0].Id)">UPDATE</button>
+    
+}
+
+
+
